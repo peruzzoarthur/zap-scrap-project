@@ -1,0 +1,791 @@
+{
+  "search": {
+    "result": {
+      "listings": [
+        {
+          "listing": {
+            "contractType": "REAL_ESTATE",
+            "sourceId": "f5c566c8-9244-35f1-ba51-a04db78cdbd4",
+            "displayAddressType": "ALL",
+            "amenities": [
+              "BATHTUB",
+              "KITCHEN"
+            ],
+            "usableAreas": [
+              82
+            ],
+            "constructionStatus": "ConstructionStatus_NONE",
+            "listingType": "USED",
+            "description": "Casa central com com 02 dormitórios, estar social, cozinha, área de serviço, wc, 01 vaga de estacionamento e pátio.Agende já sua visita através do nosso whatsapp (53)3028.0007",
+            "title": "Casa com 2 dormitórios para alugar, 82 m² por R$ 1.020,00/mês - Centro - Pelotas",
+            "stamps": [],
+            "createdAt": "2024-08-05T21:05:44.511+00:00",
+            "floors": [],
+            "unitTypes": [
+              "HOME"
+            ],
+            "nonActivationReason": "NonActivationReason_NONE",
+            "providerId": "10347",
+            "propertyType": "UNIT",
+            "unitSubTypes": [],
+            "unitsOnTheFloor": 0,
+            "legacyId": "",
+            "id": "2733057734",
+            "portal": "GRUPOZAP",
+            "unitFloor": 0,
+            "parkingSpaces": [
+              1
+            ],
+            "updatedAt": "2024-08-05T21:05:46.593+00:00",
+            "address": {
+              "city": "Pelotas",
+              "neighborhood": "Centro",
+              "street": "Rua General Osório",
+              "streetNumber": "251",
+              "point": {
+                "lat": -31.776196,
+                "lon": -52.346986,
+                "source": "GOOGLE"
+              },
+              "stateAcronym": "RS"
+            },
+            "suites": [],
+            "publicationType": "STANDARD",
+            "externalId": "000723",
+            "bathrooms": [
+              1
+            ],
+            "usageTypes": [
+              "RESIDENTIAL"
+            ],
+            "totalAreas": [
+              82
+            ],
+            "advertiserId": "370055f1-535e-2ac4-b81d-4122f0996c2f",
+            "advertiserContact": {
+              "chat": "",
+              "phones": [
+                "5330280007",
+                "53992185984"
+              ]
+            },
+            "whatsappNumber": "53992185984",
+            "bedrooms": [
+              2
+            ],
+            "acceptExchange": false,
+            "pricingInfos": [
+              {
+                "businessType": "RENTAL",
+                "yearlyIptu": 109,
+                "price": 1200,
+                "monthlyCondoFee": 0,
+                "rentalInfo": {
+                  "period": "MONTHLY",
+                  "warranties": [],
+                  "monthlyRentalTotalPrice": 1200
+                }
+              }
+            ],
+            "showPrice": true,
+            "resale": false,
+            "buildings": 0,
+            "capacityLimit": [],
+            "status": "ACTIVE"
+          },
+          "account": {
+            "id": "370055f1-535e-2ac4-b81d-4122f0996c2f",
+            "name": "PROPER CONSULTORIA IMOBILIARIA",
+            "licenseNumber": "22192-J-RS",
+            "showAddress": true,
+            "legacyVivarealId": 109908,
+            "legacyZapId": 2594284,
+            "createdDate": "2018-03-27T15:57:38Z",
+            "tier": "diamond"
+          },
+          "medias": [
+            {
+              "id": "c85cb589251cc181fe7784ac1c6c45bb",
+              "url": "https://resizedimgs.zapimoveis.com.br/{action}/{width}x{height}/named.images.sp/c85cb589251cc181fe7784ac1c6c45bb/{description}.webp",
+              "type": "IMAGE"
+            },
+            {
+              "id": "1fca3d1f6286a382ae0f660a93eb65df",
+              "url": "https://resizedimgs.zapimoveis.com.br/{action}/{width}x{height}/named.images.sp/1fca3d1f6286a382ae0f660a93eb65df/{description}.webp",
+              "type": "IMAGE"
+            },
+            {
+              "id": "d9c6e780fcb9a0e236a247035b4048e5",
+              "url": "https://resizedimgs.zapimoveis.com.br/{action}/{width}x{height}/named.images.sp/d9c6e780fcb9a0e236a247035b4048e5/{description}.webp",
+              "type": "IMAGE"
+            },
+            {
+              "id": "0685be30e565334f4cbae6a07f60d516",
+              "url": "https://resizedimgs.zapimoveis.com.br/{action}/{width}x{height}/named.images.sp/0685be30e565334f4cbae6a07f60d516/{description}.webp",
+              "type": "IMAGE"
+            },
+            {
+              "id": "7b3c90ed3a490bf8092dfbf18811c482",
+              "url": "https://resizedimgs.zapimoveis.com.br/{action}/{width}x{height}/named.images.sp/7b3c90ed3a490bf8092dfbf18811c482/{description}.webp",
+              "type": "IMAGE"
+            },
+            {
+              "id": "b9214c1929e2fdcd7bf362a4799f9bea",
+              "url": "https://resizedimgs.zapimoveis.com.br/{action}/{width}x{height}/named.images.sp/b9214c1929e2fdcd7bf362a4799f9bea/{description}.webp",
+              "type": "IMAGE"
+            },
+            {
+              "id": "f36df2f5a826437c52a9b37d6074e1fe",
+              "url": "https://resizedimgs.zapimoveis.com.br/{action}/{width}x{height}/named.images.sp/f36df2f5a826437c52a9b37d6074e1fe/{description}.webp",
+              "type": "IMAGE"
+            },
+            {
+              "id": "64396f5929ab537b8b5e227ecd6b7b6e",
+              "url": "https://resizedimgs.zapimoveis.com.br/{action}/{width}x{height}/named.images.sp/64396f5929ab537b8b5e227ecd6b7b6e/{description}.webp",
+              "type": "IMAGE"
+            },
+            {
+              "id": "84b4cad045391598c24baaa4ca0dd039",
+              "url": "https://resizedimgs.zapimoveis.com.br/{action}/{width}x{height}/named.images.sp/84b4cad045391598c24baaa4ca0dd039/{description}.webp",
+              "type": "IMAGE"
+            },
+            {
+              "id": "459349c4e4bdaa5359693add553dd4a7",
+              "url": "https://resizedimgs.zapimoveis.com.br/{action}/{width}x{height}/named.images.sp/459349c4e4bdaa5359693add553dd4a7/{description}.webp",
+              "type": "IMAGE"
+            },
+            {
+              "id": "62394cffe307dca4072f77def95f36fd",
+              "url": "https://resizedimgs.zapimoveis.com.br/{action}/{width}x{height}/named.images.sp/62394cffe307dca4072f77def95f36fd/{description}.webp",
+              "type": "IMAGE"
+            }
+          ],
+          "accountLink": {
+            "data": {},
+            "name": "PROPER CONSULTORIA IMOBILIARIA",
+            "href": "/imobiliaria/109908/",
+            "rel": ""
+          },
+          "link": {
+            "data": {
+              "state": "",
+              "city": "Pelotas",
+              "zone": "",
+              "neighborhood": "Centro",
+              "street": "Rua General Osório",
+              "streetNumber": "251"
+            },
+            "name": "Casa com 2 Quartos para alugar, 82m²",
+            "href": "/imovel/aluguel-casa-2-quartos-com-banheira-centro-pelotas-82m2-id-2733057734/",
+            "rel": ""
+          }
+        },
+        {
+          "listing": {
+            "contractType": "REAL_ESTATE",
+            "sourceId": "08fe8d7b-e5c5-3580-8fa1-7a3408e6c72b",
+            "displayAddressType": "STREET",
+            "amenities": [
+              "GARAGE",
+              "BACKYARD"
+            ],
+            "usableAreas": [
+              130
+            ],
+            "constructionStatus": "ConstructionStatus_NONE",
+            "listingType": "USED",
+            "description": "Ótima casa para alugar, ideal para quem busca conforto e praticidade no centro da cidade. Perfeita para famílias ou profissionais que desejam morar em uma região bem servida por comércios e serviços.<br><br>Características da Casa:<br>2 Dormitórios: Quartos espaçosos e bem iluminados.<br>Sala: Ambiente confortável para momentos de convivência.<br>Cozinha: Funcional e prática.<br>Banheiro: Completo e bem ventilado.<br>Pátio: Espaço externo para lazer ou atividades ao ar livre.<br>Garagem: Vaga para um veículo, garantindo segurança e comodidade.<br><br>Localização:<br>A casa está situada em uma área central, com fácil acesso a importantes pontos da cidade:<br>Av. Duque de Caxias: Próximo a uma das principais avenidas, facilitando o deslocamento.<br>Hospital Escola UFPel: Ideal para profissionais da saúde ou estudantes da área.<br>Diversos Comércios: Mercados, padarias, farmácias e outros serviços essenciais nas proximidades.<br><br>Aproveite esta oportunidade para morar em uma localização privilegiada, com todas as comodidades que você e sua família merecem!. ref. 11178 atualizado em 06/08. ]]>",
+            "title": "Aluguel de Casa com 2 Dormitórios no Centro",
+            "stamps": [],
+            "createdAt": "2024-08-02T17:29:19.996+00:00",
+            "floors": [],
+            "unitTypes": [
+              "HOME"
+            ],
+            "nonActivationReason": "NonActivationReason_NONE",
+            "providerId": "64329",
+            "propertyType": "UNIT",
+            "unitSubTypes": [],
+            "unitsOnTheFloor": 0,
+            "legacyId": "",
+            "id": "2732477360",
+            "portal": "GRUPOZAP",
+            "unitFloor": 0,
+            "parkingSpaces": [
+              1
+            ],
+            "updatedAt": "2024-08-08T17:51:25.873+00:00",
+            "address": {
+              "city": "Pelotas",
+              "neighborhood": "Centro",
+              "street": "Rua Barão da Conceição",
+              "point": {
+                "source": "GOOGLE",
+                "approximateLat": -31.763,
+                "approximateLon": -52.351,
+                "radius": 140
+              },
+              "stateAcronym": "RS"
+            },
+            "suites": [
+              0
+            ],
+            "publicationType": "PREMIERE_1",
+            "externalId": "L11178",
+            "bathrooms": [
+              1
+            ],
+            "usageTypes": [
+              "RESIDENTIAL"
+            ],
+            "totalAreas": [
+              130
+            ],
+            "advertiserId": "d5d6b862-8ba0-931c-89a7-ef48c81dce97",
+            "advertiserContact": {
+              "chat": "",
+              "phones": [
+                "5330258585",
+                "5330258531"
+              ]
+            },
+            "whatsappNumber": "",
+            "bedrooms": [
+              2
+            ],
+            "acceptExchange": false,
+            "pricingInfos": [
+              {
+                "businessType": "RENTAL",
+                "yearlyIptu": 25,
+                "price": 850,
+                "monthlyCondoFee": 0,
+                "rentalInfo": {
+                  "period": "MONTHLY",
+                  "warranties": [],
+                  "monthlyRentalTotalPrice": 850
+                }
+              }
+            ],
+            "showPrice": true,
+            "resale": false,
+            "buildings": 0,
+            "capacityLimit": [],
+            "status": "ACTIVE"
+          },
+          "account": {
+            "id": "d5d6b862-8ba0-931c-89a7-ef48c81dce97",
+            "name": "F. SOUTO IMOVEIS LTDA",
+            "logoUrl": "https://resizedimgs.zapimoveis.com.br/{action}/{width}x{height}/named.images.sp/dba4704d5d9d643ebd888b86133269aa/{description}.webp",
+            "licenseNumber": "",
+            "showAddress": false,
+            "legacyVivarealId": 728325,
+            "legacyZapId": 0,
+            "createdDate": "2021-10-29T01:58:53Z",
+            "tier": "diamond"
+          },
+          "medias": [
+            {
+              "id": "7a2eee94ed1feef474ac7c8c19eaf3e8",
+              "url": "https://resizedimgs.zapimoveis.com.br/{action}/{width}x{height}/named.images.sp/7a2eee94ed1feef474ac7c8c19eaf3e8/{description}.webp",
+              "type": "IMAGE"
+            },
+            {
+              "id": "4c31d882e440ced386441b71e1da2263",
+              "url": "https://resizedimgs.zapimoveis.com.br/{action}/{width}x{height}/named.images.sp/4c31d882e440ced386441b71e1da2263/{description}.webp",
+              "type": "IMAGE"
+            },
+            {
+              "id": "69054ef51a722d5f025bf7a5d1ec7e7b",
+              "url": "https://resizedimgs.zapimoveis.com.br/{action}/{width}x{height}/named.images.sp/69054ef51a722d5f025bf7a5d1ec7e7b/{description}.webp",
+              "type": "IMAGE"
+            },
+            {
+              "id": "a07fd77b61e4434dbc764d49c1f65cc8",
+              "url": "https://resizedimgs.zapimoveis.com.br/{action}/{width}x{height}/named.images.sp/a07fd77b61e4434dbc764d49c1f65cc8/{description}.webp",
+              "type": "IMAGE"
+            },
+            {
+              "id": "daedb1d09989bbc039987927b793acf9",
+              "url": "https://resizedimgs.zapimoveis.com.br/{action}/{width}x{height}/named.images.sp/daedb1d09989bbc039987927b793acf9/{description}.webp",
+              "type": "IMAGE"
+            },
+            {
+              "id": "669e52e959f12d55244a0a65e0d20998",
+              "url": "https://resizedimgs.zapimoveis.com.br/{action}/{width}x{height}/named.images.sp/669e52e959f12d55244a0a65e0d20998/{description}.webp",
+              "type": "IMAGE"
+            },
+            {
+              "id": "b7e6bbaa9308c645a537d5505fc17541",
+              "url": "https://resizedimgs.zapimoveis.com.br/{action}/{width}x{height}/named.images.sp/b7e6bbaa9308c645a537d5505fc17541/{description}.webp",
+              "type": "IMAGE"
+            },
+            {
+              "id": "4f855d994eae0bdc5afdfb4982faa09e",
+              "url": "https://resizedimgs.zapimoveis.com.br/{action}/{width}x{height}/named.images.sp/4f855d994eae0bdc5afdfb4982faa09e/{description}.webp",
+              "type": "IMAGE"
+            },
+            {
+              "id": "626761702ad544283f81255768c6a033",
+              "url": "https://resizedimgs.zapimoveis.com.br/{action}/{width}x{height}/named.images.sp/626761702ad544283f81255768c6a033/{description}.webp",
+              "type": "IMAGE"
+            },
+            {
+              "id": "bb4919c6e6c934674d73b96eb26205c1",
+              "url": "https://resizedimgs.zapimoveis.com.br/{action}/{width}x{height}/named.images.sp/bb4919c6e6c934674d73b96eb26205c1/{description}.webp",
+              "type": "IMAGE"
+            },
+            {
+              "id": "f5007b2b1eddcfeecbf82249bc2cfe4d",
+              "url": "https://resizedimgs.zapimoveis.com.br/{action}/{width}x{height}/named.images.sp/f5007b2b1eddcfeecbf82249bc2cfe4d/{description}.webp",
+              "type": "IMAGE"
+            },
+            {
+              "id": "88e08e0d6f63795cb6e42606bee153e9",
+              "url": "https://resizedimgs.zapimoveis.com.br/{action}/{width}x{height}/named.images.sp/88e08e0d6f63795cb6e42606bee153e9/{description}.webp",
+              "type": "IMAGE"
+            },
+            {
+              "id": "5fadf7531f79984271313ec412ba3c3f",
+              "url": "https://resizedimgs.zapimoveis.com.br/{action}/{width}x{height}/named.images.sp/5fadf7531f79984271313ec412ba3c3f/{description}.webp",
+              "type": "IMAGE"
+            },
+            {
+              "id": "f48fb5ab8d9d224bba77590368fd0e69",
+              "url": "https://resizedimgs.zapimoveis.com.br/{action}/{width}x{height}/named.images.sp/f48fb5ab8d9d224bba77590368fd0e69/{description}.webp",
+              "type": "IMAGE"
+            },
+            {
+              "id": "ff2933582364681bdcea0d70a7d2df6c",
+              "url": "https://resizedimgs.zapimoveis.com.br/{action}/{width}x{height}/named.images.sp/ff2933582364681bdcea0d70a7d2df6c/{description}.webp",
+              "type": "IMAGE"
+            },
+            {
+              "id": "90b171fe7b54e703111e83de9f8ac3ec",
+              "url": "https://resizedimgs.zapimoveis.com.br/{action}/{width}x{height}/named.images.sp/90b171fe7b54e703111e83de9f8ac3ec/{description}.webp",
+              "type": "IMAGE"
+            },
+            {
+              "id": "50a6afcc21a13411c86c4c6ae756e0ae",
+              "url": "https://resizedimgs.zapimoveis.com.br/{action}/{width}x{height}/named.images.sp/50a6afcc21a13411c86c4c6ae756e0ae/{description}.webp",
+              "type": "IMAGE"
+            },
+            {
+              "id": "cffa58f57a028a9795b8f7ed91f3647c",
+              "url": "https://resizedimgs.zapimoveis.com.br/{action}/{width}x{height}/named.images.sp/cffa58f57a028a9795b8f7ed91f3647c/{description}.webp",
+              "type": "IMAGE"
+            },
+            {
+              "id": "73753ff1f328effe0c8b2a2a6200b6f3",
+              "url": "https://resizedimgs.zapimoveis.com.br/{action}/{width}x{height}/named.images.sp/73753ff1f328effe0c8b2a2a6200b6f3/{description}.webp",
+              "type": "IMAGE"
+            },
+            {
+              "id": "8edf9d384a91c838d21dbf8fee047bc5",
+              "url": "https://resizedimgs.zapimoveis.com.br/{action}/{width}x{height}/named.images.sp/8edf9d384a91c838d21dbf8fee047bc5/{description}.webp",
+              "type": "IMAGE"
+            },
+            {
+              "id": "c913fc4ec4422704b5de1da754e32b37",
+              "url": "https://resizedimgs.zapimoveis.com.br/{action}/{width}x{height}/named.images.sp/c913fc4ec4422704b5de1da754e32b37/{description}.webp",
+              "type": "IMAGE"
+            },
+            {
+              "id": "8eb9f960101352c41b0463ced9aec3f8",
+              "url": "https://resizedimgs.zapimoveis.com.br/{action}/{width}x{height}/named.images.sp/8eb9f960101352c41b0463ced9aec3f8/{description}.webp",
+              "type": "IMAGE"
+            },
+            {
+              "id": "667ebf04eceac5bef81dca1009742099",
+              "url": "https://resizedimgs.zapimoveis.com.br/{action}/{width}x{height}/named.images.sp/667ebf04eceac5bef81dca1009742099/{description}.webp",
+              "type": "IMAGE"
+            },
+            {
+              "id": "2d425c20ac55c7d982e86e6a3d535c55",
+              "url": "https://resizedimgs.zapimoveis.com.br/{action}/{width}x{height}/named.images.sp/2d425c20ac55c7d982e86e6a3d535c55/{description}.webp",
+              "type": "IMAGE"
+            },
+            {
+              "id": "078c8d937a0c2c03e67b906f6fb79b0f",
+              "url": "https://resizedimgs.zapimoveis.com.br/{action}/{width}x{height}/named.images.sp/078c8d937a0c2c03e67b906f6fb79b0f/{description}.webp",
+              "type": "IMAGE"
+            },
+            {
+              "id": "dedca804477150d297793e7bc9114c04",
+              "url": "https://resizedimgs.zapimoveis.com.br/{action}/{width}x{height}/named.images.sp/dedca804477150d297793e7bc9114c04/{description}.webp",
+              "type": "IMAGE"
+            }
+          ],
+          "accountLink": {
+            "data": {},
+            "name": "F. SOUTO IMOVEIS LTDA",
+            "href": "/imobiliaria/728325/",
+            "rel": ""
+          },
+          "link": {
+            "data": {
+              "street": "Rua Barão da Conceição",
+              "streetNumber": "",
+              "state": "",
+              "city": "Pelotas",
+              "zone": "",
+              "neighborhood": "Centro"
+            },
+            "name": "Casa com 2 Quartos para alugar, 130m²",
+            "href": "/imovel/aluguel-casa-2-quartos-centro-pelotas-130m2-id-2732477360/",
+            "rel": ""
+          }
+        }
+      ]
+    },
+    "totalCount": 19
+  },
+  "page": {
+    "widgets": [
+      {
+        "links": [
+          {
+            "data": {},
+            "name": "Imóveis para Alugar",
+            "href": "/aluguel/",
+            "rel": "INDEX"
+          },
+          {
+            "data": {},
+            "name": "RS",
+            "href": "/aluguel/imoveis/rs/",
+            "rel": "INDEX"
+          },
+          {
+            "data": {},
+            "name": "Imóveis para alugar em Pelotas",
+            "href": "/aluguel/imoveis/rs+pelotas/",
+            "rel": "INDEX"
+          },
+          {
+            "data": {},
+            "name": "Centro",
+            "href": "",
+            "rel": "INDEX"
+          }
+        ],
+        "header": null,
+        "footer": null,
+        "category": "BREADCRUMB"
+      },
+      {
+        "links": [
+          {
+            "data": {
+              "ListingCount": "2566"
+            },
+            "name": "Imóveis para alugar",
+            "href": "/aluguel/imoveis/rs+pelotas++centro/",
+            "rel": ""
+          },
+          {
+            "data": {
+              "ListingCount": "4025"
+            },
+            "name": "Imóveis à venda",
+            "href": "/venda/imoveis/rs+pelotas++centro/",
+            "rel": ""
+          },
+          {
+            "data": {
+              "ListingCount": "3"
+            },
+            "name": "Garagens para alugar",
+            "href": "/aluguel/box-garagem/rs+pelotas++centro/",
+            "rel": ""
+          },
+          {
+            "data": {
+              "ListingCount": "38"
+            },
+            "name": "Studios para alugar",
+            "href": "/aluguel/studio/rs+pelotas++centro/",
+            "rel": ""
+          },
+          {
+            "data": {
+              "ListingCount": "1480"
+            },
+            "name": "Apartamentos para alugar",
+            "href": "/aluguel/apartamentos/rs+pelotas++centro/",
+            "rel": ""
+          },
+          {
+            "data": {
+              "ListingCount": "556"
+            },
+            "name": "Casas à venda",
+            "href": "/venda/casas/rs+pelotas++centro/",
+            "rel": ""
+          },
+          {
+            "data": {
+              "ListingCount": "22"
+            },
+            "name": "Casas para alugar com quintal",
+            "href": "/aluguel/casas/rs+pelotas++centro/quintal/",
+            "rel": ""
+          },
+          {
+            "data": {
+              "ListingCount": "5"
+            },
+            "name": "Casas de Condomínio para alugar",
+            "href": "/aluguel/casas-de-condominio/rs+pelotas++centro/",
+            "rel": ""
+          },
+          {
+            "data": {
+              "ListingCount": "3"
+            },
+            "name": "Flats para alugar",
+            "href": "/aluguel/flat/rs+pelotas++centro/",
+            "rel": ""
+          },
+          {
+            "data": {
+              "ListingCount": "52"
+            },
+            "name": "Galpões, Depósitos e Armazéns para alugar",
+            "href": "/aluguel/galpao-deposito-armazem/rs+pelotas++centro/",
+            "rel": ""
+          },
+          {
+            "data": {
+              "ListingCount": "80"
+            },
+            "name": "Kitnets para alugar",
+            "href": "/aluguel/quitinetes/rs+pelotas++centro/",
+            "rel": ""
+          },
+          {
+            "data": {
+              "ListingCount": "9"
+            },
+            "name": "Terrenos, Lotes e Condomínios para alugar",
+            "href": "/aluguel/terrenos-lotes-condominios/rs+pelotas++centro/",
+            "rel": ""
+          },
+          {
+            "data": {
+              "ListingCount": "200"
+            },
+            "name": "Lojas, Salões e Pontos Comerciais para alugar",
+            "href": "/aluguel/loja-salao/rs+pelotas++centro/",
+            "rel": ""
+          },
+          {
+            "data": {
+              "ListingCount": "73"
+            },
+            "name": "Prédios Inteiros para alugar",
+            "href": "/aluguel/predio-inteiro/rs+pelotas++centro/",
+            "rel": ""
+          },
+          {
+            "data": {
+              "ListingCount": "403"
+            },
+            "name": "Conjuntos Comerciais e Salas para alugar",
+            "href": "/aluguel/conjunto-comercial-sala/rs+pelotas++centro/",
+            "rel": ""
+          },
+          {
+            "data": {
+              "ListingCount": "6"
+            },
+            "name": "Sobrados para alugar",
+            "href": "/aluguel/sobrados/rs+pelotas++centro/",
+            "rel": ""
+          }
+        ],
+        "header": {
+          "data": {},
+          "name": "Outros imóveis em Centro",
+          "href": "",
+          "rel": ""
+        },
+        "footer": {
+          "data": {},
+          "name": "Veja mais imóveis para alugar em Pelotas",
+          "href": "/sitemap/aluguel/imoveis/rs+pelotas/",
+          "rel": ""
+        },
+        "category": "SEE_ALSO"
+      },
+      {
+        "links": [],
+        "header": {
+          "data": {},
+          "name": "Listings Markdown Page Link",
+          "href": "/alugar-imovel-barato/rs+pelotas/centro/",
+          "rel": ""
+        },
+        "footer": null,
+        "category": "MARKDOWN_PAGE_LINK"
+      }
+    ],
+    "metaContent": {
+      "robots": "INDEX, FOLLOW",
+      "title": "Casas para alugar - Centro, Pelotas, RS | ZAP Imóveis",
+      "description": "19 anúncios de Casas para alugar em Centro, Pelotas, RS. Descubra milhares de ofertas com preços imperdíveis. Confira já!",
+      "primaryHeading": "Casas para alugar em Centro, Pelotas - RS",
+      "secondaryHeading": "",
+      "shouldCountAds": false
+    },
+    "uriFragments": {
+      "unitSubTypes": [
+        "UnitSubType_NONE",
+        "TWO_STORY_HOUSE",
+        "SINGLE_STOREY_HOUSE",
+        "KITNET"
+      ],
+      "business": "RENTAL",
+      "address": {
+        "pois": [],
+        "valuableZones": [],
+        "poisList": [],
+        "country": "",
+        "state": "Rio Grande do Sul",
+        "city": "Pelotas",
+        "district": "",
+        "zone": "",
+        "neighborhood": "Centro",
+        "street": "",
+        "streetNumber": "",
+        "complement": "",
+        "zipCode": "",
+        "level": "Level_NONE",
+        "point": null,
+        "geoJson": "",
+        "precision": "Precision_NONE",
+        "name": "",
+        "locationId": "BR>Rio Grande do Sul>NULL>Pelotas>Barrios>Centro",
+        "source": "AddressSource_NONE",
+        "confidence": "ConfidenceLevel_NONE",
+        "ibgeCityId": "",
+        "stateAcronym": ""
+      },
+      "unitType": "HOME",
+      "usageType": "RESIDENTIAL",
+      "amenity": "Amenity_NONE",
+      "propertyType": "PropertyType_NONE",
+      "listingType": "USED",
+      "constructionStatus": "ConstructionStatus_NONE",
+      "bedrooms": 0,
+      "advertiserId": "",
+      "listingId": "",
+      "condominiumUuid": "",
+      "condominiumName": "",
+      "advertiserLegacyId": 0,
+      "pricingInfo": null,
+      "condominiumShortUuid": "",
+      "condominium": null,
+      "unitTypeV3": "HOME",
+      "advertiser": {
+        "id": "",
+        "legacyVivaRealId": 0,
+        "legacyZapId": 0,
+        "name": ""
+      },
+      "campaign": {
+        "name": ""
+      },
+      "pointRadius": "",
+      "contentManagementId": "",
+      "area": "0",
+      "neighborhoodsGuide": null,
+      "seoKeyword": null
+    },
+    "uriCategory": {
+      "levels": [
+        "NEIGHBORHOOD",
+        "UNIT_TYPE"
+      ],
+      "name": "NEIGHBORHOOD_UNIT_TYPE",
+      "page": "RESULT",
+      "portal": "ZAP"
+    },
+    "uriPagination": {
+      "page": 1,
+      "from": 0,
+      "size": 2,
+      "total": 19,
+      "totalListingCounter": 19
+    },
+    "link": {
+      "data": {},
+      "name": "Centro",
+      "href": "/aluguel/casas/rs+pelotas++centro/",
+      "rel": ""
+    },
+    "condominium": null,
+    "redirectRule": null
+  },
+  "facets": {
+    "amenities": {
+      "KITCHEN": 13,
+      "SERVICE_AREA": 10,
+      "PETS_ALLOWED": 7,
+      "BACKYARD": 6,
+      "BATHTUB": 2,
+      "GARAGE": 2,
+      "GARDEN": 2,
+      "AIR_CONDITIONING": 1,
+      "ALARM_SYSTEM": 1,
+      "BALCONY": 1
+    }
+  },
+  "fullUriFragments": {
+    "addresses": [
+      {
+        "state": "Rio Grande do Sul",
+        "city": "Pelotas",
+        "neighborhood": "Centro",
+        "locationId": "BR>Rio Grande do Sul>NULL>Pelotas>Barrios>Centro"
+      },
+      {
+        "state": "Rio Grande do Sul",
+        "city": "Pelotas",
+        "neighborhood": "Porto",
+        "locationId": "BR>Rio Grande do Sul>NULL>Pelotas>Barrios>Porto"
+      }
+    ],
+    "business": "RENTAL",
+    "priceMax": 1400,
+    "unitTypes": [
+      "HOME"
+    ],
+    "unitSubTypes": [
+      "UnitSubType_NONE,TWO_STORY_HOUSE,SINGLE_STOREY_HOUSE,KITNET"
+    ],
+    "unitTypesV3": [
+      "HOME"
+    ],
+    "usageTypes": [
+      "RESIDENTIAL"
+    ],
+    "listingType": "USED",
+    "parentId": "null",
+    "viewport": "null"
+  },
+  "superPremium": {
+    "search": {
+      "result": {
+        "listings": []
+      },
+      "totalCount": 0
+    }
+  },
+  "schema": {
+    "@context": "https://schema.org/",
+    "@type": "ItemList",
+    "url": "https://www.zapimoveis.com.br/v2/listings",
+    "itemListElement": []
+  }
+}
