@@ -5,18 +5,23 @@ import { ZapService } from './zap.service';
 export class ZapController {
   constructor(private readonly zapService: ZapService) {}
 
-  @Get()
-  saveJson() {
-    return this.zapService.saveJson();
-  }
+  // @Get()
+  // saveJson() {
+  //   return this.zapService.saveJson();
+  // }
 
   @Get('json')
   parseJson() {
     return this.zapService.parseJson();
   }
 
-  // @Get('url')
-  // getUrl() {
-  //   return this.zapService.createUrl();
-  // }
+  @Get('test')
+  test() {
+    return this.zapService.test();
+  }
 }
+
+// @Get('url')
+// getUrl() {
+//   return this.zapService.createUrl();
+// }
