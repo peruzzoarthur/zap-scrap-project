@@ -1,9 +1,3 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
-// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
-// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
-
 generator client {
   provider = "prisma-client-js"
 }
@@ -15,4 +9,55 @@ datasource db {
 
 model House {
   id String @id @default(uuid())
+  address Address @relation(fields: [addressId], references: [id])
+  addressId String @unique
+  princingInfo PricingInfo @relation(fields: [pricingInfoId], references: [id])
+  pricingInfoId String @unique
+}
+
+// schema.prisma
+
+model Point {
+  id      Int     @id @default(autoincrement())
+  lat     Float
+  lon     Float
+  source  String
+  addresses Address[]
+
+  // Optional: add relations or other fields as needed
+}
+
+model Address {
+  id             String    @id @default(uuid())
+  city           String
+  neighborhood   String
+  street         String
+  streetNumber   String
+  stateAcronym   String
+  pointId        Int
+  point          Point   @relation(fields: [pointId], references: [id])
+  house          House?
+
+  // Optional: add relations or other fields as needed
+}
+
+model PricingInfo {
+  id                        String      @id @default(uuid())
+  businessType              String
+  yearlyIptu                Int
+  price                     Float
+  monthlyCondoFee           Float
+  rentalInfo                RentalInfo @relation(fields: [rentalInfoId], references: [id])
+  rentalInfoId              String    @unique
+  house                     House?
+
+  // Optional: add relations or other fields as needed
+}
+
+model RentalInfo {
+  id                        String  @id @default(uuid())
+  period                    String
+  warranties                String[] @default([])
+  monthlyRentalTotalPrice  Float
+  princingInfo              PricingInfo?
 }

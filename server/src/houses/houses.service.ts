@@ -2,16 +2,31 @@ import { Injectable } from '@nestjs/common';
 import { CreateHouseDto } from './dto/create-house.dto';
 import { UpdateHouseDto } from './dto/update-house.dto';
 import { PrismaService } from 'src/prisma/prisma.service';
+import { ZapService } from 'src/zap/zap.service';
 
 @Injectable()
 export class HousesService {
-  constructor(private prisma: PrismaService) {}
+  constructor(
+    private prisma: PrismaService,
+    private zapService: ZapService,
+  ) {}
   async create(createHouseDto: CreateHouseDto) {
-    return await this.prisma.house.create({ data: {} });
+    const fetch = await this.zapService.test();
+
+    const array = fetch.search.result.listings.map((l) => {
+      const { id, description, address } = l.listing;
+      return { id, description, address };
+    });
+    // const { id, description, address } =
+    //   fetch.search.result.listings[0].listing;
+
+    return array;
+
+    // return await this.prisma.house.create({ data: { id: 'uuiasd' } });
   }
 
-  findAll() {
-    return `This action returns all houses`;
+  async findAll() {
+    return await this.prisma.house.findMany();
   }
 
   findOne(id: number) {

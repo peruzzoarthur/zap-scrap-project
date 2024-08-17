@@ -7,5 +7,6 @@ import { HttpModule } from '@nestjs/axios';
   imports: [HttpModule],
   controllers: [ZapController],
   providers: [ZapService],
+  exports: [ZapService],
 })
 export class ZapModule {}
