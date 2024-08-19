@@ -1,4 +1,12 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
+import {
+  Controller,
+  Get,
+  Post,
+  Body,
+  Patch,
+  Param,
+  Delete,
+} from '@nestjs/common';
 import { HousesService } from './houses.service';
 import { CreateHouseDto } from './dto/create-house.dto';
 import { UpdateHouseDto } from './dto/update-house.dto';
@@ -17,6 +25,10 @@ export class HousesController {
     return this.housesService.findAll();
   }
 
+  @Get('fetch-and-create')
+  fetchAndCreate() {
+    return this.housesService.fetchAndCreate();
+  }
   @Get(':id')
   findOne(@Param('id') id: string) {
     return this.housesService.findOne(+id);

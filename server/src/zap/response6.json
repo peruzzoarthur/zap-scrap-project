@@ -7,13 +7,8 @@
             "contractType": "REAL_ESTATE",
             "sourceId": "f5c566c8-9244-35f1-ba51-a04db78cdbd4",
             "displayAddressType": "ALL",
-            "amenities": [
-              "BATHTUB",
-              "KITCHEN"
-            ],
-            "usableAreas": [
-              82
-            ],
+            "amenities": ["BATHTUB", "KITCHEN"],
+            "usableAreas": [82],
             "constructionStatus": "ConstructionStatus_NONE",
             "listingType": "USED",
             "description": "Casa central com com 02 dormitórios, estar social, cozinha, área de serviço, wc, 01 vaga de estacionamento e pátio.Agende já sua visita através do nosso whatsapp (53)3028.0007",
@@ -21,9 +16,7 @@
             "stamps": [],
             "createdAt": "2024-08-05T21:05:44.511+00:00",
             "floors": [],
-            "unitTypes": [
-              "HOME"
-            ],
+            "unitTypes": ["HOME"],
             "nonActivationReason": "NonActivationReason_NONE",
             "providerId": "10347",
             "propertyType": "UNIT",
@@ -33,9 +26,7 @@
             "id": "2733057734",
             "portal": "GRUPOZAP",
             "unitFloor": 0,
-            "parkingSpaces": [
-              1
-            ],
+            "parkingSpaces": [1],
             "updatedAt": "2024-08-05T21:05:46.593+00:00",
             "address": {
               "city": "Pelotas",
@@ -52,27 +43,16 @@
             "suites": [],
             "publicationType": "STANDARD",
             "externalId": "000723",
-            "bathrooms": [
-              1
-            ],
-            "usageTypes": [
-              "RESIDENTIAL"
-            ],
-            "totalAreas": [
-              82
-            ],
+            "bathrooms": [1],
+            "usageTypes": ["RESIDENTIAL"],
+            "totalAreas": [82],
             "advertiserId": "370055f1-535e-2ac4-b81d-4122f0996c2f",
             "advertiserContact": {
               "chat": "",
-              "phones": [
-                "5330280007",
-                "53992185984"
-              ]
+              "phones": ["5330280007", "53992185984"]
             },
             "whatsappNumber": "53992185984",
-            "bedrooms": [
-              2
-            ],
+            "bedrooms": [2],
             "acceptExchange": false,
             "pricingInfos": [
               {
@@ -185,13 +165,8 @@
             "contractType": "REAL_ESTATE",
             "sourceId": "08fe8d7b-e5c5-3580-8fa1-7a3408e6c72b",
             "displayAddressType": "STREET",
-            "amenities": [
-              "GARAGE",
-              "BACKYARD"
-            ],
-            "usableAreas": [
-              130
-            ],
+            "amenities": ["GARAGE", "BACKYARD"],
+            "usableAreas": [130],
             "constructionStatus": "ConstructionStatus_NONE",
             "listingType": "USED",
             "description": "Ótima casa para alugar, ideal para quem busca conforto e praticidade no centro da cidade. Perfeita para famílias ou profissionais que desejam morar em uma região bem servida por comércios e serviços.<br><br>Características da Casa:<br>2 Dormitórios: Quartos espaçosos e bem iluminados.<br>Sala: Ambiente confortável para momentos de convivência.<br>Cozinha: Funcional e prática.<br>Banheiro: Completo e bem ventilado.<br>Pátio: Espaço externo para lazer ou atividades ao ar livre.<br>Garagem: Vaga para um veículo, garantindo segurança e comodidade.<br><br>Localização:<br>A casa está situada em uma área central, com fácil acesso a importantes pontos da cidade:<br>Av. Duque de Caxias: Próximo a uma das principais avenidas, facilitando o deslocamento.<br>Hospital Escola UFPel: Ideal para profissionais da saúde ou estudantes da área.<br>Diversos Comércios: Mercados, padarias, farmácias e outros serviços essenciais nas proximidades.<br><br>Aproveite esta oportunidade para morar em uma localização privilegiada, com todas as comodidades que você e sua família merecem!. ref. 11178 atualizado em 06/08. ]]>",
@@ -199,9 +174,7 @@
             "stamps": [],
             "createdAt": "2024-08-02T17:29:19.996+00:00",
             "floors": [],
-            "unitTypes": [
-              "HOME"
-            ],
+            "unitTypes": ["HOME"],
             "nonActivationReason": "NonActivationReason_NONE",
             "providerId": "64329",
             "propertyType": "UNIT",
@@ -211,9 +184,7 @@
             "id": "2732477360",
             "portal": "GRUPOZAP",
             "unitFloor": 0,
-            "parkingSpaces": [
-              1
-            ],
+            "parkingSpaces": [1],
             "updatedAt": "2024-08-08T17:51:25.873+00:00",
             "address": {
               "city": "Pelotas",
@@ -227,32 +198,19 @@
               },
               "stateAcronym": "RS"
             },
-            "suites": [
-              0
-            ],
+            "suites": [0],
             "publicationType": "PREMIERE_1",
             "externalId": "L11178",
-            "bathrooms": [
-              1
-            ],
-            "usageTypes": [
-              "RESIDENTIAL"
-            ],
-            "totalAreas": [
-              130
-            ],
+            "bathrooms": [1],
+            "usageTypes": ["RESIDENTIAL"],
+            "totalAreas": [130],
             "advertiserId": "d5d6b862-8ba0-931c-89a7-ef48c81dce97",
             "advertiserContact": {
               "chat": "",
-              "phones": [
-                "5330258585",
-                "5330258531"
-              ]
+              "phones": ["5330258585", "5330258531"]
             },
             "whatsappNumber": "",
-            "bedrooms": [
-              2
-            ],
+            "bedrooms": [2],
             "acceptExchange": false,
             "pricingInfos": [
               {
@@ -703,10 +661,7 @@
       "seoKeyword": null
     },
     "uriCategory": {
-      "levels": [
-        "NEIGHBORHOOD",
-        "UNIT_TYPE"
-      ],
+      "levels": ["NEIGHBORHOOD", "UNIT_TYPE"],
       "name": "NEIGHBORHOOD_UNIT_TYPE",
       "page": "RESULT",
       "portal": "ZAP"
@@ -758,18 +713,12 @@
     ],
     "business": "RENTAL",
     "priceMax": 1400,
-    "unitTypes": [
-      "HOME"
-    ],
+    "unitTypes": ["HOME"],
     "unitSubTypes": [
       "UnitSubType_NONE,TWO_STORY_HOUSE,SINGLE_STOREY_HOUSE,KITNET"
     ],
-    "unitTypesV3": [
-      "HOME"
-    ],
-    "usageTypes": [
-      "RESIDENTIAL"
-    ],
+    "unitTypesV3": ["HOME"],
+    "usageTypes": ["RESIDENTIAL"],
     "listingType": "USED",
     "parentId": "null",
     "viewport": "null"

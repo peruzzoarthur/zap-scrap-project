@@ -1,102 +1,11 @@
 import { Injectable } from '@nestjs/common';
 import axios from 'axios';
-import { writeFile } from 'fs/promises';
-import { promises as fs } from 'fs';
-import * as https from 'https';
 import { ZapSearch } from './types';
 import { v4 as uuidv4 } from 'uuid';
 @Injectable()
 export class ZapService {
-  // async saveJson() {
-  //   const uuid = uuidv4();
-  //   const headers = {
-  //     Host: 'glue-api.zapimoveis.com.br',
-  //     'User-Agent':
-  //       'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:129.0) Gecko/20100101 Firefox/129.0',
-  //     Accept: '*/*',
-  //     'Accept-Language': 'en-US,en;q=0.5',
-  //     'Accept-Encoding': 'gzip, deflate, br',
-  //     Referer: 'https://www.zapimoveis.com.br/',
-  //     'X-Domain': '.zapimoveis.com.br',
-  //     'X-Deviceid': uuid,
-  //     Origin: 'https://www.zapimoveis.com.br',
-  //     'Sec-Fetch-Dest': 'empty',
-  //     'Sec-Fetch-Mode': 'cors',
-  //     'Sec-Fetch-Site': 'same-site',
-  //     Priority: 'u=0',
-  //     Te: 'trailers',
-  //   };
-
-  //   const caCert = await fs.readFile(
-  //     '/home/arthur/coldLab/scrap/server/src/utils/ca.crt',
-  //   );
-  //   const httpsAgent = new https.Agent({
-  //     ca: caCert,
-  //   });
-  //   try {
-  //     const getUrl = await this.createUrl(uuid);
-  //     const response = await axios.get(getUrl, {
-  //       headers,
-  //       responseType: 'arraybuffer',
-  //       httpsAgent: httpsAgent,
-  //       proxy: {
-  //         host: process.env.PROXY_HOST,
-  //         port: Number(process.env.PROXY_PORT),
-  //         protocol: 'http',
-  //         auth: {
-  //           username: process.env.PROXY_USER,
-  //           password: process.env.PROXY_PASSWORD,
-  //         },
-  //       },
-  //     });
-
-  //     // Convert binary data to string
-  //     const responseData = Buffer.from(response.data, 'binary').toString(
-  //       'utf-8',
-  //     );
-
-  //     // Parse JSON from string
-  //     const jsonData = JSON.parse(responseData);
-
-  //     // Save JSON data to file
-  //     await writeFile(
-  //       '/home/arthur/coldLab/scrap/server/src/zap/all_houses_rent_pelotas.json',
-  //       JSON.stringify(jsonData, null, 2), // Pretty-print JSON with indentation
-  //     );
-
-  //     console.log(
-  //       'Data saved successfully at: /home/arthur/coldLab/scrap/server/src/zap/all_houses_rent_pelotas.json',
-  //     );
-
-  //     return jsonData;
-  //   } catch (error) {
-  //     if (axios.isAxiosError(error)) {
-  //       console.error('Axios error:', {
-  //         message: error.message,
-  //         code: error.code,
-  //         response: error.response
-  //           ? {
-  //               status: error.response.status,
-  //               statusText: error.response.statusText,
-  //               data: error.response.data,
-  //             }
-  //           : undefined,
-  //         config: error.config,
-  //       });
-  //     } else {
-  //       console.error('Error:', error);
-  //     }
-  //   }
-  // }
-
   async parseJson() {
-    // const fileContent = await fs.readFile(
-    //   '/home/ozzurep/coldLab/zap_scrap/python/zap_server/response.json',
-    //   'utf8',
-    // );
-    // const fileContent = await this.test()
-    // const parsedJson: ZapSearch = JSON.parse(fileContent);
-    const parsedJson: ZapSearch = await this.test();
+    const parsedJson: ZapSearch = await this.fetchData();
 
     const listing = parsedJson.search.result.listings.map((l) => {
       const medias = l.medias;
@@ -124,7 +33,7 @@ export class ZapService {
     return listing;
   }
 
-  async test(): Promise<ZapSearch> {
+  async fetchData(): Promise<ZapSearch> {
     const uuid = uuidv4();
     const url = await this.createUrl(uuid);
     const res = await axios.post('http://localhost:8000/zapp/fetch-data/', {
@@ -134,11 +43,8 @@ export class ZapService {
   }
 
   async createUrl(userId: string) {
-    // Base URL
     const baseUrl = 'https://glue-api.zapimoveis.com.br/v2/listings';
 
-    // Manually encoded includeFields parameter
-    // Other query parameters
     const params = {
       user: userId,
       portal: 'ZAP',
@@ -150,7 +56,7 @@ export class ZapService {
       business: 'RENTAL',
       parentId: 'null',
       listingType: 'USED',
-      priceMax: '1400',
+      // priceMax: '1400',
       addressCity: 'Pelotas,Pelotas',
       addressLocationId:
         'BR>Rio Grande do Sul>NULL>Pelotas>Barrios>Centro,BR>Rio Grande do Sul>NULL>Pelotas>Barrios>Porto',
@@ -178,7 +84,7 @@ export class ZapService {
     // Combine base URL and query string
     const fullUrl = `${baseUrl}?${queryString}`;
 
-    console.log(fullUrl);
+    // console.log(fullUrl);
 
     return fullUrl;
   }

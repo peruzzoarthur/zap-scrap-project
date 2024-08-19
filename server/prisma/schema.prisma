@@ -15,13 +15,12 @@ model House {
   pricingInfoId String @unique
 }
 
-// schema.prisma
 
 model Point {
   id      Int     @id @default(autoincrement())
-  lat     Float
-  lon     Float
-  source  String
+  lat     Float?
+  lon     Float?
+  source  String?
   addresses Address[]
 
   // Optional: add relations or other fields as needed
@@ -44,9 +43,9 @@ model Address {
 model PricingInfo {
   id                        String      @id @default(uuid())
   businessType              String
-  yearlyIptu                Int
+  yearlyIptu                Int?
   price                     Float
-  monthlyCondoFee           Float
+  monthlyCondoFee           Float?
   rentalInfo                RentalInfo @relation(fields: [rentalInfoId], references: [id])
   rentalInfoId              String    @unique
   house                     House?
@@ -59,5 +58,5 @@ model RentalInfo {
   period                    String
   warranties                String[] @default([])
   monthlyRentalTotalPrice  Float
-  princingInfo              PricingInfo?
+  pricingInfo              PricingInfo?
 }

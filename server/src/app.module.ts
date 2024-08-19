@@ -5,9 +5,22 @@ import { ConfigModule } from '@nestjs/config';
 import { ZapModule } from './zap/zap.module';
 import { PrismaModule } from './prisma/prisma.module';
 import { HousesModule } from './houses/houses.module';
+import { AddressesModule } from './addresses/addresses.module';
+import { PointsModule } from './points/points.module';
+import { PricingInfoModule } from './pricing-info/pricing-info.module';
+import { RentalInfoModule } from './rental-info/rental-info.module';
 
 @Module({
-  imports: [ConfigModule.forRoot({ isGlobal: true }), ZapModule, PrismaModule, HousesModule],
+  imports: [
+    ConfigModule.forRoot({ isGlobal: true }),
+    ZapModule,
+    PrismaModule,
+    HousesModule,
+    AddressesModule,
+    PointsModule,
+    PricingInfoModule,
+    RentalInfoModule,
+  ],
   controllers: [AppController],
   providers: [AppService],
 })
