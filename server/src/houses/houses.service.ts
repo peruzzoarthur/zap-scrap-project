@@ -69,51 +69,65 @@ export class HousesService {
     });
 
     array.map(async (item) => {
-      const savePoint = await this.pointsService.create({
-        lat: item.address.point.lat,
-        lon: item.address.point.lon,
-        source: item.address.point.source,
-      });
-      const saveAddress = await this.addressesService.create({
-        city: item.address.city,
-        neighborhood: item.address.neighborhood,
-        pointId: savePoint.id,
-        stateAcronym: item.address.stateAcronym,
-        street: item.address.street,
-        streetNumber: item.address.streetNumber,
-      });
-      const pricingInfos = item.pricingInfos[0];
-      const saveRentalInfo = await this.rentalInfoService.create({
-        monthlyRentalTotalPrice:
-          pricingInfos.rentalInfo.monthlyRentalTotalPrice,
-        period: pricingInfos.rentalInfo.period,
-        warranties: pricingInfos.rentalInfo.warranties,
-      });
-      const savePricingInfo = await this.pricingInfoService.create({
-        businessType: pricingInfos.businessType,
-        monthlyCondoFee: pricingInfos.monthlyCondoFee,
-        price: pricingInfos.price,
-        yearlyIptu: pricingInfos.yearlyIptu,
-        rentalInfoId: saveRentalInfo.id,
-      });
-      const saveHouse = await this.prisma.house.create({
-        data: {
-          addressId: saveAddress.id,
-          pricingInfoId: savePricingInfo.id,
-        },
-      });
-      console.log(saveHouse);
+      const isHouse = await this.findOne(item.id);
+      if (isHouse) {
+        console.log(`house with id ${item.id} already exists`);
+        return;
+      } else {
+        const savePoint = await this.pointsService.create({
+          lat: item.address.point.lat,
+          lon: item.address.point.lon,
+          source: item.address.point.source,
+        });
+        const saveAddress = await this.addressesService.create({
+          city: item.address.city,
+          neighborhood: item.address.neighborhood,
+          pointId: savePoint.id,
+          stateAcronym: item.address.stateAcronym,
+          street: item.address.street,
+          streetNumber: item.address.streetNumber,
+        });
+        const pricingInfos = item.pricingInfos[0];
+        const saveRentalInfo = await this.rentalInfoService.create({
+          monthlyRentalTotalPrice:
+            pricingInfos.rentalInfo.monthlyRentalTotalPrice,
+          period: pricingInfos.rentalInfo.period,
+          warranties: pricingInfos.rentalInfo.warranties,
+        });
+        const savePricingInfo = await this.pricingInfoService.create({
+          businessType: pricingInfos.businessType,
+          monthlyCondoFee: pricingInfos.monthlyCondoFee,
+          price: pricingInfos.price,
+          yearlyIptu: pricingInfos.yearlyIptu,
+          rentalInfoId: saveRentalInfo.id,
+        });
+        const saveHouse = await this.prisma.house.create({
+          data: {
+            id: item.id,
+            addressId: saveAddress.id,
+            pricingInfoId: savePricingInfo.id,
+          },
+        });
+        console.log(saveHouse);
+        console.log(`New house found!! ${saveHouse.id}`);
+      }
     });
 
     return array;
   }
 
   async findAll() {
-    return await this.prisma.house.findMany();
+    return await this.prisma.house.findMany({
+      select: {
+        id: true,
+        address: true,
+        pricingInfo: true,
+      },
+    });
   }
 
-  findOne(id: number) {
-    return `This action returns a #${id} house`;
+  async findOne(id: string) {
+    return await this.prisma.house.findUnique({ where: { id: id } });
   }
 
   update(id: number, updateHouseDto: UpdateHouseDto) {

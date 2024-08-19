@@ -7,7 +7,6 @@ import { PrismaService } from 'src/prisma/prisma.service';
 export class PricingInfoService {
   constructor(private prisma: PrismaService) {}
   async create(createPricingInfoDto: CreatePricingInfoDto) {
-    console.log(createPricingInfoDto);
     return await this.prisma.pricingInfo.create({
       data: {
         businessType: createPricingInfoDto.businessType ?? '?',

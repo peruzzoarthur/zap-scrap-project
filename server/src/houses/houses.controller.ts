@@ -31,7 +31,7 @@ export class HousesController {
   }
   @Get(':id')
   findOne(@Param('id') id: string) {
-    return this.housesService.findOne(+id);
+    return this.housesService.findOne(id);
   }
 
   @Patch(':id')

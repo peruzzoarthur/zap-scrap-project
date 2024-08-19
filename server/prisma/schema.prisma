@@ -11,7 +11,7 @@ model House {
   id String @id @default(uuid())
   address Address @relation(fields: [addressId], references: [id])
   addressId String @unique
-  princingInfo PricingInfo @relation(fields: [pricingInfoId], references: [id])
+  pricingInfo PricingInfo @relation(fields: [pricingInfoId], references: [id])
   pricingInfoId String @unique
 }
 
@@ -22,8 +22,6 @@ model Point {
   lon     Float?
   source  String?
   addresses Address[]
-
-  // Optional: add relations or other fields as needed
 }
 
 model Address {
@@ -36,8 +34,6 @@ model Address {
   pointId        Int
   point          Point   @relation(fields: [pointId], references: [id])
   house          House?
-
-  // Optional: add relations or other fields as needed
 }
 
 model PricingInfo {
@@ -49,8 +45,6 @@ model PricingInfo {
   rentalInfo                RentalInfo @relation(fields: [rentalInfoId], references: [id])
   rentalInfoId              String    @unique
   house                     House?
-
-  // Optional: add relations or other fields as needed
 }
 
 model RentalInfo {
