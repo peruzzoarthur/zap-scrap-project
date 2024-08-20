@@ -13,6 +13,7 @@ model House {
   addressId String @unique
   pricingInfo PricingInfo @relation(fields: [pricingInfoId], references: [id])
   pricingInfoId String @unique
+  media   Media[]
 }
 
 
@@ -53,4 +54,11 @@ model RentalInfo {
   warranties                String[] @default([])
   monthlyRentalTotalPrice  Float
   pricingInfo              PricingInfo?
+}
+
+model Media {
+  id String  @id @default(uuid()) 
+  url String
+  house House? @relation(fields: [houseId], references: [id])
+  houseId String?
 }

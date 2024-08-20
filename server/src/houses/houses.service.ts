@@ -7,6 +7,7 @@ import { PointsService } from 'src/points/points.service';
 import { AddressesService } from 'src/addresses/addresses.service';
 import { RentalInfoService } from 'src/rental-info/rental-info.service';
 import { PricingInfoService } from 'src/pricing-info/pricing-info.service';
+import { MediasService } from 'src/medias/medias.service';
 
 @Injectable()
 export class HousesService {
@@ -17,6 +18,7 @@ export class HousesService {
     private addressesService: AddressesService,
     private rentalInfoService: RentalInfoService,
     private pricingInfoService: PricingInfoService,
+    private mediasService: MediasService,
   ) {}
 
   async create(createHouseDto: CreateHouseDto) {
@@ -48,14 +50,14 @@ export class HousesService {
         sourceId,
       } = l.listing;
 
-      // const medias = l.medias;
-      // console.log(savePoint);
+      const medias = l.medias;
+
       return {
         id,
         title,
         description,
         address,
-        // medias,
+        medias,
         totalAreas,
         usableAreas,
         bathrooms,
@@ -79,6 +81,7 @@ export class HousesService {
           lon: item.address.point.lon,
           source: item.address.point.source,
         });
+
         const saveAddress = await this.addressesService.create({
           city: item.address.city,
           neighborhood: item.address.neighborhood,
@@ -87,13 +90,16 @@ export class HousesService {
           street: item.address.street,
           streetNumber: item.address.streetNumber,
         });
+
         const pricingInfos = item.pricingInfos[0];
+
         const saveRentalInfo = await this.rentalInfoService.create({
           monthlyRentalTotalPrice:
             pricingInfos.rentalInfo.monthlyRentalTotalPrice,
           period: pricingInfos.rentalInfo.period,
           warranties: pricingInfos.rentalInfo.warranties,
         });
+
         const savePricingInfo = await this.pricingInfoService.create({
           businessType: pricingInfos.businessType,
           monthlyCondoFee: pricingInfos.monthlyCondoFee,
@@ -101,12 +107,20 @@ export class HousesService {
           yearlyIptu: pricingInfos.yearlyIptu,
           rentalInfoId: saveRentalInfo.id,
         });
+
         const saveHouse = await this.prisma.house.create({
           data: {
             id: item.id,
             addressId: saveAddress.id,
             pricingInfoId: savePricingInfo.id,
           },
+        });
+
+        item.medias.map(async (m) => {
+          await this.mediasService.create({
+            url: m.url,
+            houseId: saveHouse.id,
+          });
         });
         console.log(saveHouse);
         console.log(`New house found!! ${saveHouse.id}`);
@@ -117,13 +131,15 @@ export class HousesService {
   }
 
   async findAll() {
-    return await this.prisma.house.findMany({
+    const houses = await this.prisma.house.findMany({
       select: {
         id: true,
         address: true,
         pricingInfo: true,
+        media: true,
       },
     });
+    return houses.length;
   }
 
   async findOne(id: string) {

@@ -8,6 +8,7 @@ import { PointsModule } from 'src/points/points.module';
 import { AddressesModule } from 'src/addresses/addresses.module';
 import { PricingInfoModule } from 'src/pricing-info/pricing-info.module';
 import { RentalInfoModule } from 'src/rental-info/rental-info.module';
+import { MediasModule } from 'src/medias/medias.module';
 
 @Module({
   controllers: [HousesController],
@@ -19,6 +20,7 @@ import { RentalInfoModule } from 'src/rental-info/rental-info.module';
     AddressesModule,
     PricingInfoModule,
     RentalInfoModule,
+    MediasModule,
   ],
 })
 export class HousesModule {}

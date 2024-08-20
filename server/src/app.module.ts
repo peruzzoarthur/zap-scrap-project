@@ -9,6 +9,7 @@ import { AddressesModule } from './addresses/addresses.module';
 import { PointsModule } from './points/points.module';
 import { PricingInfoModule } from './pricing-info/pricing-info.module';
 import { RentalInfoModule } from './rental-info/rental-info.module';
+import { MediasModule } from './medias/medias.module';
 
 @Module({
   imports: [
@@ -20,6 +21,7 @@ import { RentalInfoModule } from './rental-info/rental-info.module';
     PointsModule,
     PricingInfoModule,
     RentalInfoModule,
+    MediasModule,
   ],
   controllers: [AppController],
   providers: [AppService],
